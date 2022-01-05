@@ -1,9 +1,31 @@
 /**
  * @format
  */
+import { Navigation } from "react-native-navigation";
+import BridgedPicker from "./AppFolder/Screens/BridgedPicker";
+import Splash from "./AppFolder/Splash";
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+Navigation.registerComponent('Splash', () => Splash)
+Navigation.registerComponent('BridgedPicker', () => BridgedPicker)
 
-AppRegistry.registerComponent(appName, () => App);
+Navigation.events().registerAppLaunchedListener(()=>{
+    Navigation.setRoot({
+        root : {
+            stack :{
+                id : 'AppStack',
+                children:[
+                    {
+                        component:{
+                            name:'Splash',
+                            options:{
+                                topBar:{
+                                    visible:false
+                                },
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    })
+})
