@@ -21,7 +21,7 @@ class Picker : NSObject, RCTBridgeModule{
   }
   
   @objc
-  func ShowMessage(_ message: String,_ duration : Double){
+  func ShowMessage(_ message: String, duration : Double){
     let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
     alert.view.backgroundColor = .black
     alert.view.alpha = 0.5

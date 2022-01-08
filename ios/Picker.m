@@ -12,6 +12,5 @@
 RCT_EXTERN_METHOD(ShowMessage:(NSString *)message duration:(double *)duration)
 @end
 
-
 //@end
 

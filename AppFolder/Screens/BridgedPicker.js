@@ -20,7 +20,8 @@ const BridgedPicker = () => {
 
     const callAlertFromNative = () => {
         // isIOS && NativeModules.Picker.ShowMessage("hello",3)
-        console.log("NativeModules = " , NativeModules)
+        console.log("NativeModules = "  )
+        NativeModules.Picker.ShowMessage("Hello To the Outside",3)
     }
 
     return(

@@ -71,6 +71,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		008A73FD27895593002D2517 /* NewPicker */ = {
+			isa = PBXGroup;
+			children = (
+				B478AD222785A4DF00A6C367 /* Picker.swift */,
+				B478AD262785A85000A6C367 /* Picker.m */,
+			);
+			name = NewPicker;
+			sourceTree = "<group>";
+		};
 		00E356EF1AD99517003FC87E /* bridgesTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,15 +100,14 @@
 		13B07FAE1A68108700A75B9A /* bridges */ = {
 			isa = PBXGroup;
 			children = (
+				008A73FD27895593002D2517 /* NewPicker */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				B478AD222785A4DF00A6C367 /* Picker.swift */,
 				B478AD212785A4DE00A6C367 /* bridges-Bridging-Header.h */,
-				B478AD262785A85000A6C367 /* Picker.m */,
 			);
 			name = bridges;
 			sourceTree = "<group>";
